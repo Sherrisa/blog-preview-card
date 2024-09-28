@@ -27,7 +27,6 @@ main {
 .card {
   background: var(--white);
   width: 384px;
-  height: 522px;
   padding: 1.5rem;
   border-radius: 20px;
   border: 1px solid var(--gray950);
@@ -36,6 +35,7 @@ main {
 }
 
 .card-blog-img {
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -93,4 +93,22 @@ main {
 
 .card:hover .card-title {
   color: var(--yellow);
+}
+
+@media (width < 576px) {
+  body {
+    font-size: 14px;
+  }
+  .card {
+    width: 327px;
+  }
+  .card-category,
+  .card-publishdate,
+  .card-author {
+    font-size: 12px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
 }
